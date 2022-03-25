@@ -1,12 +1,14 @@
+// Import required items from Sequelize
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
+// Create our Category model
 class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    // Define columns according to requirements
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
